@@ -1,5 +1,5 @@
 language: csharp
-solution: dotnet-open-source.sln
+solution: Insight.Common.sln
 mono: none
 dotnet: 3.1.200
 stages:

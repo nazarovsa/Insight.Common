@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Hosting.Worker", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Hosting", "src\Insight.Hosting\Insight.Hosting.csproj", "{C3E4B5D4-2058-4DE8-BDB3-5CCEF4398AEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Transactions", "src\Insight.Transactions\Insight.Transactions.csproj", "{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{C3E4B5D4-2058-4DE8-BDB3-5CCEF4398AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3E4B5D4-2058-4DE8-BDB3-5CCEF4398AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3E4B5D4-2058-4DE8-BDB3-5CCEF4398AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

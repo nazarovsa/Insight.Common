@@ -1,4 +1,4 @@
-dotnet-open-source
+Insight.Common
 ========================
 
-Dotnet opensource repository template.
+My common libraries

@@ -33,7 +33,7 @@ namespace Insight.Testing
 		public void AddService<T1, T2>(T2 service)
 		{
 			if (!typeof(T1).IsAssignableFrom(typeof(T2)))
-				throw new InvalidOperationException($"{typeof(T2).FullName} does not implement {typeof(T1).FullName}");
+				throw new InvalidOperationException($"{typeof(T2).FullName} does not implements {typeof(T1).FullName}");
 
 			_services.Add(typeof(T1), service);
 		}

@@ -1,7 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <TargetFramework>netcoreapp3.1</TargetFramework>
+		<Title>Abstractions for testing</Title>
+		<Authors>Sergey Nazarov</Authors>
+		<Copyright>Copyright © 2020 Sergey Nazarov</Copyright>
+		<PackageProjectUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Testing</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Testing</RepositoryUrl>
+		<RepositoryType>Github</RepositoryType>
+    <Version>1.0.0</Version>
   </PropertyGroup>
-
 </Project>

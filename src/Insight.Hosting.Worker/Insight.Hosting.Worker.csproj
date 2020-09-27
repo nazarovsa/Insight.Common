@@ -1,15 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-	<PropertyGroup>
+  <PropertyGroup>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<FrameworkReference Include="Microsoft.AspNetCore.App" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\Insight.Hosting\Insight.Hosting.csproj" />
-	</ItemGroup>
-
+	  <Title>Worker hosting abstractions</Title>
+	  <Authors>Sergey Nazarov</Authors>
+	  <Copyright>Copyright © 2020 Sergey Nazarov</Copyright>
+	  <PackageProjectUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Hosting.Worker</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Hosting.Worker</RepositoryUrl>
+	  <RepositoryType>Github</RepositoryType>
+	  <Version>1.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Insight.Hosting\Insight.Hosting.csproj" />
+  </ItemGroup>
 </Project>

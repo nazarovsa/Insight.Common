@@ -43,6 +43,18 @@ namespace Insight.DependencyInjection
 			return services;
 		}
 
+		public static IServiceCollection RegisterDefaultImplementations(this IServiceCollection services,
+			Assembly assembly, Type @interface, ServiceLifetime lifetime = ServiceLifetime.Scoped)
+		{
+			return services.RegisterDefaultImplementations(assembly, new[] {@interface}, lifetime);
+		}
+
+
+		public static IServiceCollection RegisterDefaultImplementations(this IServiceCollection services,
+			Assembly assembly, Type[] interfaces, ServiceLifetime lifetime = ServiceLifetime.Scoped)
+		{
+			return services.RegisterDefaultImplementations(new[] {assembly}, interfaces, lifetime);
+		}
 
 		public static IServiceCollection RegisterDefaultImplementations(this IServiceCollection services,
 			Assembly[] assemblies, Type[] interfaces, ServiceLifetime lifetime = ServiceLifetime.Scoped)
@@ -59,12 +71,6 @@ namespace Insight.DependencyInjection
 			}
 
 			return services;
-		}
-
-		public static IServiceCollection RegisterDefaultImplementations(this IServiceCollection services,
-			Assembly assembly, Type[] interfaces, ServiceLifetime lifetime = ServiceLifetime.Scoped)
-		{
-			return services.RegisterDefaultImplementations(new[] {assembly}, interfaces, lifetime);
 		}
 
 		public static IServiceCollection RegisterDefaultImplementations(this IServiceCollection services,

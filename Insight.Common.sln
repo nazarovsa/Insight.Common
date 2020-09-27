@@ -13,11 +13,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.DependencyInjection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Testing", "src\Insight.Testing\Insight.Testing.csproj", "{11BB2E1E-7728-4BE4-A1E6-B55FDEFA8BED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Hosting.Worker", "src\Insight.Hosting.Worker\Insight.Hosting.Worker.csproj", "{B627D56C-DBD6-4F18-A39D-691595D12B64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Hosting.Worker", "src\Insight.Hosting.Worker\Insight.Hosting.Worker.csproj", "{B627D56C-DBD6-4F18-A39D-691595D12B64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Hosting", "src\Insight.Hosting\Insight.Hosting.csproj", "{C3E4B5D4-2058-4DE8-BDB3-5CCEF4398AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Hosting", "src\Insight.Hosting\Insight.Hosting.csproj", "{C3E4B5D4-2058-4DE8-BDB3-5CCEF4398AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Transactions", "src\Insight.Transactions\Insight.Transactions.csproj", "{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Transactions", "src\Insight.Transactions\Insight.Transactions.csproj", "{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{E15ED34D-B34A-4F9D-803B-9070BC272563}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Reactive.RabbitMQ.Samples", "samples\Insight.Reactive.RabbitMQ.Samples\Insight.Reactive.RabbitMQ.Samples.csproj", "{125DA748-B4A5-4C3B-BCC5-E0B0651A6C04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Reactive.RabbitMQ", "src\Insight.Reactive.RabbitMQ\Insight.Reactive.RabbitMQ.csproj", "{9FBE2643-D4FA-40AC-912B-EEC6769F7AF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Reactive.RabbitMQ.Tests", "tests\Insight.Reactive.RabbitMQ.Tests\Insight.Reactive.RabbitMQ.Tests.csproj", "{4AE6BCC7-5C02-4090-B987-B13AE1B5218A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +61,18 @@ Global
 		{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AE309DE-1A50-4BA5-8843-0D9ACCE21CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125DA748-B4A5-4C3B-BCC5-E0B0651A6C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125DA748-B4A5-4C3B-BCC5-E0B0651A6C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125DA748-B4A5-4C3B-BCC5-E0B0651A6C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125DA748-B4A5-4C3B-BCC5-E0B0651A6C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FBE2643-D4FA-40AC-912B-EEC6769F7AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FBE2643-D4FA-40AC-912B-EEC6769F7AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FBE2643-D4FA-40AC-912B-EEC6769F7AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FBE2643-D4FA-40AC-912B-EEC6769F7AF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE6BCC7-5C02-4090-B987-B13AE1B5218A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE6BCC7-5C02-4090-B987-B13AE1B5218A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE6BCC7-5C02-4090-B987-B13AE1B5218A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE6BCC7-5C02-4090-B987-B13AE1B5218A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +80,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ACF9173B-2EAC-44F6-8EB6-80A71E944FA1} = {238B3094-7166-47C7-A254-E4022125CC45}
 		{FCDB62B1-9D64-4243-A534-AE265307D914} = {238B3094-7166-47C7-A254-E4022125CC45}
+		{125DA748-B4A5-4C3B-BCC5-E0B0651A6C04} = {E15ED34D-B34A-4F9D-803B-9070BC272563}
+		{4AE6BCC7-5C02-4090-B987-B13AE1B5218A} = {238B3094-7166-47C7-A254-E4022125CC45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B17B755-418E-4CED-9F3C-F98C5F2F1306}

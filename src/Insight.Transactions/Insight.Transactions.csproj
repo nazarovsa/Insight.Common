@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-		<TargetFramework>netcoreapp3.1</TargetFramework>
-	  <Title>Transaction tools</Title>
-	  <Authors>Sergey Nazarov</Authors>
-	  <Copyright>Copyright © 2020 Sergey Nazarov</Copyright>
-	  <PackageProjectUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Transactions</PackageProjectUrl>
-	  <RepositoryUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Transactions</RepositoryUrl>
-	  <RepositoryType>Github</RepositoryType>
-	  <Version>1.0.0</Version>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Title>Transaction tools</Title>
+    <Authors>Sergey Nazarov</Authors>
+    <Copyright>Copyright © 2020 Sergey Nazarov</Copyright>
+    <PackageProjectUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Transactions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Transactions</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 </Project>

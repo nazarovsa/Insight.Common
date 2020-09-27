@@ -11,26 +11,29 @@ namespace Insight.Transactions
 
 		public AsyncTransactionScope()
 		{
-			Initialize();
-		}
-
-		public AsyncTransactionScope(TransactionScopeOption scopeOption = TransactionScopeOption.Required,
-			IsolationLevel isolationLevel = IsolationLevel.ReadCommitted)
-		{
-			Initialize(scopeOption, isolationLevel);
-		}
-
-		private void Initialize(TransactionScopeOption scopeOption = TransactionScopeOption.Required,
-			IsolationLevel isolationLevel = IsolationLevel.ReadCommitted)
-		{
 			if (Transaction.Current != null)
 				_scope = new TransactionScope(Transaction.Current, TransactionScopeAsyncFlowOption.Enabled);
 			else
-				_scope = new TransactionScope(scopeOption, new TransactionOptions
+				_scope = new TransactionScope(TransactionScopeOption.Required, new TransactionOptions
 				{
-					IsolationLevel = isolationLevel,
+					IsolationLevel = IsolationLevel.ReadCommitted
 				}, TransactionScopeAsyncFlowOption.Enabled);
 		}
+
+		public AsyncTransactionScope(IsolationLevel isolationLevel) : this(TransactionScopeOption.Required,
+			isolationLevel)
+		{
+		}
+
+		public AsyncTransactionScope(TransactionScopeOption scopeOption,
+			IsolationLevel isolationLevel)
+		{
+			_scope = new TransactionScope(scopeOption, new TransactionOptions
+			{
+				IsolationLevel = isolationLevel,
+			}, TransactionScopeAsyncFlowOption.Enabled);
+		}
+
 
 		public void Complete()
 		{

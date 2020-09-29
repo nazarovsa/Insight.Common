@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Reactive.RabbitMQ",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Reactive.RabbitMQ.Tests", "tests\Insight.Reactive.RabbitMQ.Tests\Insight.Reactive.RabbitMQ.Tests.csproj", "{4AE6BCC7-5C02-4090-B987-B13AE1B5218A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Json", "src\Insight.Json\Insight.Json.csproj", "{C69E3CC8-F8ED-4988-94F4-EB37BF233426}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{4AE6BCC7-5C02-4090-B987-B13AE1B5218A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AE6BCC7-5C02-4090-B987-B13AE1B5218A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AE6BCC7-5C02-4090-B987-B13AE1B5218A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69E3CC8-F8ED-4988-94F4-EB37BF233426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69E3CC8-F8ED-4988-94F4-EB37BF233426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69E3CC8-F8ED-4988-94F4-EB37BF233426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69E3CC8-F8ED-4988-94F4-EB37BF233426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

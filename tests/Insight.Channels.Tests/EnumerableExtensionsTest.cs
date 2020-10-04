@@ -29,14 +29,11 @@ namespace Insight.Channels.Tests
 			await ints
 				.AsChannelReader()
 				.Split(100)
-				.SinkMany(async (number) =>
+				.SinkMany((number) =>
 				{
 					Interlocked.Add(ref sum, number);
 					return Task.CompletedTask;
-				}, async (number, ex) =>
-				{
-					throw ex;
-				});
+				}, async (number, ex) => throw ex);
 
 
 			Assert.Equal(ints.Sum(x => x), sum);

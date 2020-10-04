@@ -32,7 +32,10 @@ namespace Insight.Channels.Tests
 				.SinkMany(async (number) =>
 				{
 					Interlocked.Add(ref sum, number);
-					await Task.Delay(1);
+					return Task.CompletedTask;
+				}, async (number, ex) =>
+				{
+					throw ex;
 				});
 
 

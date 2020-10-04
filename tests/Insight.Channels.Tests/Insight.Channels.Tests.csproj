@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Insight.Channels\Insight.Channels.csproj" />
+    <ProjectReference Include="..\..\src\Insight.Channels\Insight.Channels.csproj" />
   </ItemGroup>
 
 </Project>

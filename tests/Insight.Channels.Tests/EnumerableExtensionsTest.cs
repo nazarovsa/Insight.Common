@@ -1,8 +1,5 @@
-using System;
 using System.Diagnostics;
-using Insight.Channels;
 using System.Linq;
-using System.Reflection.Metadata.Ecma335;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
@@ -34,7 +31,7 @@ namespace Insight.Channels.Tests
 				.Split(100)
 				.SinkMany(async (number) =>
 				{
-					Interlocked.Add(ref sum, number); 
+					Interlocked.Add(ref sum, number);
 					await Task.Delay(1);
 				});
 

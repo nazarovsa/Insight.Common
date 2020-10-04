@@ -7,7 +7,7 @@
     <PackageProjectUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Hosting</PackageProjectUrl>
     <RepositoryUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Hosting</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />

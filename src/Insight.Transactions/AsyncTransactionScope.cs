@@ -11,13 +11,10 @@ namespace Insight.Transactions
 
 		public AsyncTransactionScope()
 		{
-			if (Transaction.Current != null)
-				_scope = new TransactionScope(Transaction.Current, TransactionScopeAsyncFlowOption.Enabled);
-			else
-				_scope = new TransactionScope(TransactionScopeOption.Required, new TransactionOptions
-				{
-					IsolationLevel = IsolationLevel.ReadCommitted
-				}, TransactionScopeAsyncFlowOption.Enabled);
+			_scope = new TransactionScope(TransactionScopeOption.Required, new TransactionOptions
+			{
+				IsolationLevel = IsolationLevel.ReadCommitted
+			}, TransactionScopeAsyncFlowOption.Enabled);
 		}
 
 		public AsyncTransactionScope(IsolationLevel isolationLevel) : this(TransactionScopeOption.Required,

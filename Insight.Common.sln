@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Channels", "src\Ins
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Result", "src\Insight.Result\Insight.Result.csproj", "{DEA76A90-AA12-4EF3-8CDE-34DF887F5FC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Dto", "src\Insight.Dto\Insight.Dto.csproj", "{FC615C4B-1ED8-4ACD-BF05-5842DDF7DFF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{DEA76A90-AA12-4EF3-8CDE-34DF887F5FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEA76A90-AA12-4EF3-8CDE-34DF887F5FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEA76A90-AA12-4EF3-8CDE-34DF887F5FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC615C4B-1ED8-4ACD-BF05-5842DDF7DFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC615C4B-1ED8-4ACD-BF05-5842DDF7DFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC615C4B-1ED8-4ACD-BF05-5842DDF7DFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC615C4B-1ED8-4ACD-BF05-5842DDF7DFF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

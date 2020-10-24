@@ -7,6 +7,6 @@
     <PackageProjectUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Transactions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.Transactions</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
   </PropertyGroup>
 </Project>

@@ -20,7 +20,7 @@ namespace Insight.Testing
 			return (T) service;
 		}
 
-		public void AddService<T>(T service) where T : new()
+		public void AddService<T>(T service)
 		{
 			_services.Add(typeof(T), service);
 		}

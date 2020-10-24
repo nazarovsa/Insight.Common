@@ -7,7 +7,7 @@
     <PackageProjectUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.DependencyInjection</PackageProjectUrl>
     <RepositoryUrl>https://github.com/InsightAppDev/Insight.Common/tree/master/src/Insight.DependencyInjection</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />

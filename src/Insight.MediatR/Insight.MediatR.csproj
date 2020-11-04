@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Version>1.0.8</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="8.1.0" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Insight.DependencyInjection\Insight.DependencyInjection.csproj" />

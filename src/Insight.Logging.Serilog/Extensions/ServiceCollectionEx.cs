@@ -9,5 +9,11 @@ namespace Insight.Logging.Serilog.Extensions
 			services.AddScoped<ILogService, SerilogService>();
 			return services;
 		}
+		
+		public static IServiceCollection AddGenericSerilogService(this IServiceCollection services)
+		{
+			services.AddScoped(typeof(ILogService<>), typeof(SerilogService<>));
+			return services;
+		}
 	}
 }

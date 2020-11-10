@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Logging", "src\Insi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Logging.Serilog", "src\Insight.Logging.Serilog\Insight.Logging.Serilog.csproj", "{B24F93F0-EA32-471E-A4CC-FB7368514C59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Logging.Serilog.Tests", "tests\Insight.Logging.Serilog.Tests\Insight.Logging.Serilog.Tests.csproj", "{7B860F2B-AB85-450D-9A83-6E9B4F4B2597}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +165,10 @@ Global
 		{B24F93F0-EA32-471E-A4CC-FB7368514C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B24F93F0-EA32-471E-A4CC-FB7368514C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B24F93F0-EA32-471E-A4CC-FB7368514C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B860F2B-AB85-450D-9A83-6E9B4F4B2597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B860F2B-AB85-450D-9A83-6E9B4F4B2597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B860F2B-AB85-450D-9A83-6E9B4F4B2597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B860F2B-AB85-450D-9A83-6E9B4F4B2597}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -174,6 +180,7 @@ Global
 		{4AE6BCC7-5C02-4090-B987-B13AE1B5218A} = {238B3094-7166-47C7-A254-E4022125CC45}
 		{A24481E9-0C14-4F99-BD68-B275AFDE9E7E} = {238B3094-7166-47C7-A254-E4022125CC45}
 		{54D396CA-C39D-4947-B857-4EA35FC15A4B} = {238B3094-7166-47C7-A254-E4022125CC45}
+		{7B860F2B-AB85-450D-9A83-6E9B4F4B2597} = {238B3094-7166-47C7-A254-E4022125CC45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B17B755-418E-4CED-9F3C-F98C5F2F1306}

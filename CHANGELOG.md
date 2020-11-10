@@ -1,4 +1,6 @@
 # 1.2
+
+1.2.1 - Add generic ILogService 
 1.2.0 - Add MediatR features: RequestLogDecorator, RequestValidationDecorator
 
 # 1.0

@@ -5,6 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Insight.Dto\Insight.Dto.csproj" />
       <ProjectReference Include="..\Insight.Logging\Insight.Logging.csproj" />
       <ProjectReference Include="..\Insight.MediatR\Insight.MediatR.csproj" />
     </ItemGroup>

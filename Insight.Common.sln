@@ -37,8 +37,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Channels.Tests", "t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insight.Channels", "src\Insight.Channels\Insight.Channels.csproj", "{C9E562C8-2321-49C8-9346-78C033D0D4A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Result", "src\Insight.Result\Insight.Result.csproj", "{DEA76A90-AA12-4EF3-8CDE-34DF887F5FC5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Dto", "src\Insight.Dto\Insight.Dto.csproj", "{FC615C4B-1ED8-4ACD-BF05-5842DDF7DFF2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Dates", "src\Insight.Dates\Insight.Dates.csproj", "{7F5A322F-774B-4165-8F53-386501531E81}"
@@ -129,10 +127,6 @@ Global
 		{C9E562C8-2321-49C8-9346-78C033D0D4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E562C8-2321-49C8-9346-78C033D0D4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E562C8-2321-49C8-9346-78C033D0D4A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEA76A90-AA12-4EF3-8CDE-34DF887F5FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEA76A90-AA12-4EF3-8CDE-34DF887F5FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEA76A90-AA12-4EF3-8CDE-34DF887F5FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEA76A90-AA12-4EF3-8CDE-34DF887F5FC5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC615C4B-1ED8-4ACD-BF05-5842DDF7DFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC615C4B-1ED8-4ACD-BF05-5842DDF7DFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC615C4B-1ED8-4ACD-BF05-5842DDF7DFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -12,5 +12,12 @@ namespace Insight.MediatR.Logging.Extensions
 
 			return services;
 		}
+
+		public static IServiceCollection AddRequestFailedResultLogDecorator(this IServiceCollection services)
+		{
+			services.Decorate(typeof(IRequestHandler<,>), typeof(RequestFailedResultLogDecorator<,>));
+
+			return services;
+		}
 	}
 }

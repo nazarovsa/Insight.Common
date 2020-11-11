@@ -1,4 +1,4 @@
-﻿namespace Insight.Result
+﻿namespace Insight.Dto
 {
 	public class Result
 	{
@@ -10,9 +10,9 @@
 
 		public string Message { get; protected set; }
 
-		public Result Ok() => new Result {Success = true};
+		public static Result Ok() => new Result {Success = true};
 
-		public Result Fail(string message) => new Result {Message = message};
+		public static Result Fail(string message) => new Result {Message = message};
 
 		public static Result<T> Ok<T>(T value) => Result<T>.Ok(value);
 

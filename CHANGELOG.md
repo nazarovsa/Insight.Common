@@ -1,3 +1,6 @@
+# 1.5
+1.5.0 - Fix Result methods, Add failed result log decorator
+
 # 1.4
 1.4.0 - Add Insight.Authorization.Jwt.Extensions package
 

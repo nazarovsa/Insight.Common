@@ -1,15 +1,18 @@
 ﻿using System.Reflection;
 using System.Threading;
+using System.Threading.Tasks;
 using FluentValidation;
 using Insight.Logging.Serilog.Extensions;
 using Insight.MediatR.Extensions;
 using Insight.MediatR.Logging.Decorators;
 using Insight.MediatR.Logging.Extensions;
-using Insight.MediatR.Tests.Infrastructure;
+using Insight.MediatR.Tests.Infrastructure.Commands.Dummy;
+using Insight.MediatR.Tests.Infrastructure.Commands.DummyWithFailedResult;
 using Insight.MediatR.Validation.Decorators;
 using Insight.MediatR.Validation.Extensions;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using Serilog;
 using Xunit;
 
 namespace Insight.MediatR.Tests
@@ -27,6 +30,19 @@ namespace Insight.MediatR.Tests
 			var handler = provider.GetService<IRequestHandler<DummyCommand, bool>>();
 			Assert.NotNull(handler);
 			Assert.Equal(typeof(RequestLogDecorator<DummyCommand, bool>), handler.GetType());
+		}
+
+		[Fact]
+		public void Should_decorate_request_with_failed_result_log_decorator()
+		{
+			var services = GetServiceCollection();
+			services.AddRequestFailedResultLogDecorator();
+			services.AddSerilogService();
+
+			var provider = services.BuildServiceProvider();
+			var handler = provider.GetService<IRequestHandler<DummyCommand, bool>>();
+			Assert.NotNull(handler);
+			Assert.Equal(typeof(RequestFailedResultLogDecorator<DummyCommand, bool>), handler.GetType());
 		}
 
 		[Fact]

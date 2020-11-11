@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using MediatR;
 
-namespace Insight.MediatR.Tests.Infrastructure
+namespace Insight.MediatR.Tests.Infrastructure.Commands.Dummy
 {
-	public sealed class DummyHandler : IRequestHandler<DummyCommand, bool>
+	internal sealed class DummyHandler : IRequestHandler<DummyCommand, bool>
 	{
 		public Task<bool> Handle(DummyCommand request, CancellationToken cancellationToken)
 		{

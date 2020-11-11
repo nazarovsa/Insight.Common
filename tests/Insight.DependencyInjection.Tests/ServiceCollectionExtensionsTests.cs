@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using Insight.DependencyInjection.Extensions;
 using Insight.DependencyInjection.Tests.Infrastructure;
 using Insight.DependencyInjection.Tests.Infrastructure.Handlers;
 using Insight.DependencyInjection.Tests.Infrastructure.Requests;

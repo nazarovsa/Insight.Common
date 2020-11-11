@@ -1,18 +1,18 @@
 using System;
 using System.Linq;
 
-namespace Insight.DependencyInjection
+namespace Insight.DependencyInjection.Extensions
 {
 	public static class TypeExtensions
 	{
 		public static bool IsImplementsAnyGenericType(this Type type)
-		{
-			return type.GetInterfaces().Any(x => x.IsGenericType);
-		}
+			=> type
+				.GetInterfaces()
+				.Any(x => x.IsGenericType);
 
 		public static bool IsImplementsGenericType(this Type type, Type implementedType)
-		{
-			return type.GetInterfaces().Any(x => x.IsGenericType && x.GetGenericTypeDefinition() == implementedType);
-		}
+			=> type
+				.GetInterfaces()
+				.Any(x => x.IsGenericType && x.GetGenericTypeDefinition() == implementedType);
 	}
 }

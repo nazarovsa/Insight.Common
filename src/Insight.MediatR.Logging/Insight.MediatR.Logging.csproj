@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Insight.MediatR\Insight.MediatR.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Scrutor" Version="3.3.0" />
+    </ItemGroup>
+
 </Project>

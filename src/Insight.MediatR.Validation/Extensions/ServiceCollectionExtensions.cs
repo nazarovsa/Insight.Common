@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using FluentValidation;
+using Insight.DependencyInjection.Extensions;
 using Insight.MediatR.Validation.Decorators;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,11 +13,7 @@ namespace Insight.MediatR.Validation.Extensions
 			params Assembly[] assemblies)
 		{
 			services.Decorate(typeof(IRequestHandler<,>), typeof(RequestValidationDecorator<,>));
-			services.Scan(s =>
-				s.FromAssemblies(assemblies)
-					.AddClasses(c => c.AssignableTo(typeof(IValidator<>)))
-					.As(typeof(IValidator<>))
-					.WithScopedLifetime());
+			services.AsClosedTypesOf(assemblies, typeof(IValidator<>));
 
 			return services;
 		}

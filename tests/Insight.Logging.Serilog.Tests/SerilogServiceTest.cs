@@ -16,12 +16,12 @@ namespace Insight.Logging.Serilog.Tests
 			var logService1 = provider.GetService<ILogService<DummyTypeOne>>();
 			Assert.NotNull(logService1);
 			Assert.True(logService1.GetType().IsGenericType);
-			Assert.Equal(logService1.GetType().GenericTypeArguments.First(), typeof(DummyTypeOne));
+			Assert.Equal(typeof(DummyTypeOne), logService1.GetType().GenericTypeArguments.First());
 			
 			var logService2 = provider.GetService<ILogService<DummyTypeTwo>>();
 			Assert.NotNull(logService2);
 			Assert.True(logService2.GetType().IsGenericType);
-			Assert.Equal(logService2.GetType().GenericTypeArguments.First(), typeof(DummyTypeTwo));
+			Assert.Equal(typeof(DummyTypeTwo), logService2.GetType().GenericTypeArguments.First());
 		}
 
 

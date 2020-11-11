@@ -6,7 +6,7 @@ using System.Text;
 using Insight.DependencyInjection.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Insight.DependencyInjection
+namespace Insight.DependencyInjection.Extensions
 {
 	public static class ServiceCollectionExtensions
 	{

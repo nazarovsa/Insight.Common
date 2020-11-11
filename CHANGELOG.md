@@ -1,3 +1,6 @@
+# 1.3
+1.3.0 - Add Insight.Authorization.Jwt package
+
 # 1.2
 
 1.2.1 - Add generic ILogService 

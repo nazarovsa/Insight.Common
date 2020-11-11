@@ -2,5 +2,6 @@
 	<PropertyGroup>
 		<MicrosoftVersion>3.1.10</MicrosoftVersion>
 		<NewtonJsonVersion>12.0.3</NewtonJsonVersion>
+		<FluentValidationVersion>9.3.0</FluentValidationVersion>
 	</PropertyGroup>
 </Project>

@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Authorization.Jwt",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Authorization.Jwt.Extensions", "src\Insight.Authorization.Jwt.Extensions\Insight.Authorization.Jwt.Extensions.csproj", "{EDDA9278-9317-42FF-9D69-CE2FC9864027}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.AspNetCore.ExceptionFilters", "src\Insight.AspNetCore.ExceptionFilters\Insight.AspNetCore.ExceptionFilters.csproj", "{285BEB9D-B7E1-4C57-ADE1-069B2052A315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Exceptions", "src\Insight.Exceptions\Insight.Exceptions.csproj", "{762495ED-F805-4232-8D1C-A1CE052AD1AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +179,14 @@ Global
 		{EDDA9278-9317-42FF-9D69-CE2FC9864027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDDA9278-9317-42FF-9D69-CE2FC9864027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDDA9278-9317-42FF-9D69-CE2FC9864027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285BEB9D-B7E1-4C57-ADE1-069B2052A315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285BEB9D-B7E1-4C57-ADE1-069B2052A315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285BEB9D-B7E1-4C57-ADE1-069B2052A315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285BEB9D-B7E1-4C57-ADE1-069B2052A315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762495ED-F805-4232-8D1C-A1CE052AD1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762495ED-F805-4232-8D1C-A1CE052AD1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762495ED-F805-4232-8D1C-A1CE052AD1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762495ED-F805-4232-8D1C-A1CE052AD1AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

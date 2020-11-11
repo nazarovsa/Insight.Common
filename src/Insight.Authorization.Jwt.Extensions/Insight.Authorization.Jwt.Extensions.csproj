@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Insight.Authorization.Jwt\Insight.Authorization.Jwt.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="$(MicrosoftVersion)" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="$(MicrosoftVersion)" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="$(MicrosoftVersion)" />
+    </ItemGroup>
+
+</Project>

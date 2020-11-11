@@ -1,3 +1,6 @@
+# 1.4
+1.4.0 - Add Insight.Authorization.Jwt.Extensions package
+
 # 1.3
 1.3.0 - Add Insight.Authorization.Jwt package
 

@@ -34,7 +34,7 @@ namespace Insight.Authorization.Jwt
 			GetClaimsIdentity(claims, RolValues.RefreshAccess),
 			_jwtTokenOptions.RefreshTokenLifetime);
 
-		private string GetToken(ClaimsIdentity identity, int lifetime)
+		private string GetToken(ClaimsIdentity identity, TimeSpan lifetime)
 		{
 			var now = _jwtServiceOptions.DateTimeHandling == DateTimeHandling.Local
 				? _dateProvider.LocalDateTime
@@ -45,7 +45,7 @@ namespace Insight.Authorization.Jwt
 				_jwtTokenOptions.Audience,
 				notBefore: now,
 				claims: identity.Claims,
-				expires: now.Add(TimeSpan.FromMinutes(lifetime)),
+				expires: now.Add(lifetime),
 				signingCredentials: new SigningCredentials(_jwtTokenOptions.GetSymmetricSecurityKey(),
 					_jwtTokenOptions.Algorithm));
 

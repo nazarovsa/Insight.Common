@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Insight.Authorization.Jwt.Options
@@ -26,14 +27,14 @@ namespace Insight.Authorization.Jwt.Options
 		public string Algorithm { get; set; }
 
 		/// <summary>
-		/// Lifetime of access token (minutes)
+		/// Lifetime of access token
 		/// </summary>
-		public int AccessTokenLifetime { get; set; }
+		public TimeSpan AccessTokenLifetime { get; set; }
 
 		/// <summary>
-		/// Lifetime of refresh token (minutes)
+		/// Lifetime of refresh token
 		/// </summary>
-		public int RefreshTokenLifetime { get; set; }
+		public TimeSpan RefreshTokenLifetime { get; set; }
 
 		public SymmetricSecurityKey GetSymmetricSecurityKey() => new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Key));
 	}

@@ -1,6 +1,7 @@
 # 1.8
 
-1.8.1 - Change IValidator<> registration at Insight.MediatR.Validation FROM Scrutor TO Insight.DependencyInjection.Extensions.ServiceCollectionExtensions.AsClosedTypesOf
+1.8.2 - Change `JwtTokenOptions` lifetimes from `int` to `TimeSpan`
+1.8.1 - Change `IValidator<>` registration at Insight.MediatR.Validation FROM Scrutor TO Insight.DependencyInjection.Extensions.ServiceCollectionExtensions.AsClosedTypesOf
 1.8.0 - Add Insight.Logging.Serilog.Middlewares
 
 # 1.7

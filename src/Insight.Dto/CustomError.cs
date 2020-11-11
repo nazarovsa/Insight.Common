@@ -8,12 +8,12 @@ namespace Insight.Dto
 
 		public Exception Exception { get; private set; }
 
-		public CustomError(string message)
+		private CustomError(string message)
 		{
 			Message = message;
 		}
 
-		public CustomError(string message, Exception ex) : this(message)
+		private CustomError(string message, Exception ex) : this(message)
 		{
 			Exception = ex;
 		}

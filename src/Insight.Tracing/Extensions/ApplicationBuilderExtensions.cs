@@ -5,21 +5,21 @@ namespace Insight.Tracing.Extensions
 {
 	public static class ApplicationBuilderExtensions
 	{
-		public static IApplicationBuilder AddTraceContext(this IApplicationBuilder services)
+		public static IApplicationBuilder UseTraceContextMiddleware(this IApplicationBuilder app)
 		{
-			services.UseMiddleware<TraceContextMiddleware>();
+			app.UseMiddleware<TraceContextMiddleware>();
 
-			return services;
+			return app;
 		}
 
-		public static IApplicationBuilder AddTraceContext(this IApplicationBuilder services, string traceIdHeaderName)
+		public static IApplicationBuilder UseTraceContextMiddleware(this IApplicationBuilder app, string traceIdHeaderName)
 		{
 			if (string.IsNullOrWhiteSpace(traceIdHeaderName))
 				throw new ArgumentNullException(nameof(traceIdHeaderName));
 
-			services.UseMiddleware<TraceContextMiddleware>(traceIdHeaderName);
+			app.UseMiddleware<TraceContextMiddleware>(traceIdHeaderName);
 
-			return services;
+			return app;
 		}
 	}
 }

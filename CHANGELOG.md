@@ -1,3 +1,7 @@
+# 1.8
+
+1.8.0 - Add Insight.Logging.Serilog.Middlewares
+
 # 1.7
 
 1.7.0 - Add Insight.Marten.Extensions, Add Insight.Tracing

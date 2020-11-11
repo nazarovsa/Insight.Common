@@ -2,7 +2,7 @@
 
 namespace Insight.Logging.Serilog.Extensions
 {
-	public static class ServiceCollectionEx
+	public static class ServiceCollectionExtensions
 	{
 		public static IServiceCollection AddSerilogService(this IServiceCollection services)
 		{

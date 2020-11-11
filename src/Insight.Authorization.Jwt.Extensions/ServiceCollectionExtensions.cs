@@ -10,7 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Insight.Authorization.Jwt.Extensions
 {
-	public static class ServiceCollectionEx
+	public static class ServiceCollectionExtensions
 	{
 		public static IServiceCollection AddJwtAuthorization(this IServiceCollection services,
 			JwtTokenOptions jwtTokenOptions,

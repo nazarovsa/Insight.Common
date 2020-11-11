@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Insight.MediatR.Logging.Extensions
 {
-	public static class ServiceCollectionEx
+	public static class ServiceCollectionExtensions
 	{
 		public static IServiceCollection AddRequestLogDecorator(this IServiceCollection services)
 		{

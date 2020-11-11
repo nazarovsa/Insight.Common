@@ -1,3 +1,7 @@
+# 1.7
+
+1.7.0 - Add Insight.Marten.Extensions, Add Insight.Tracing
+
 # 1.6
 
 1.6.0 - Add Insight.Exceptions, Add Insight.AspNetCore.ExceptionFilters

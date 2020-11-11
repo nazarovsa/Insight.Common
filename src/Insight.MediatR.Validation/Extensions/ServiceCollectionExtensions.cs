@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Insight.MediatR.Validation.Extensions
 {
-	public static class ServiceCollectionEx
+	public static class ServiceCollectionExtensions
 	{
 		public static IServiceCollection AddRequestValidationDecorator(this IServiceCollection services,
 			params Assembly[] assemblies)

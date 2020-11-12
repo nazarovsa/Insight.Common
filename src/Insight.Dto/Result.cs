@@ -1,34 +1,17 @@
 ﻿namespace Insight.Dto
 {
-	public class Result
+	public record Result(bool Success, string Message)
 	{
-		protected Result()
-		{
-		}
-
-		public bool Success { get; protected set; }
-
-		public string Message { get; protected set; }
-
-		public static Result Ok() => new Result {Success = true};
-
-		public static Result Fail(string message) => new Result {Message = message};
-
+		public static Result Ok() => new Result(true, default);
+		public static Result Fail(string message) => new Result(false, message);
 		public static Result<T> Ok<T>(T value) => Result<T>.Ok(value);
-
 		public static Result<T> Fail<T>(string message) => Result<T>.Fail(message);
 	}
 
-	public sealed class Result<T> : Result
+	public sealed record Result<T>(bool Success, string Message, T Value) : Result(Success, Message)
 	{
-		private Result()
-		{
-		}
+		public static Result<T> Ok(T value) => new Result<T>(true, default, value);
 
-		public T Value { get; private set; }
-
-		public static Result<T> Ok(T value) => new Result<T> {Success = true, Value = value};
-
-		public new static Result<T> Fail(string message) => new Result<T> {Message = message};
+		public new static Result<T> Fail(string message) => new Result<T>(default, message, default);
 	}
 }

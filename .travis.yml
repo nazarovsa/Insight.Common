@@ -1,7 +1,7 @@
 language: csharp
 solution: Insight.Common.sln
 mono: none
-dotnet: 3.1.200
+dotnet: 5.0.100
 stages:
  - test
  - publish

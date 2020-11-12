@@ -16,7 +16,7 @@ namespace Insight.AspNetCore.ExceptionFilters.Filters
 			context.Result = new ObjectResult("Domain exception was thrown")
 			{
 				StatusCode = (int) HttpStatusCode.BadRequest,
-				Value = CustomError.Create(context.Exception.Message)
+				Value = new CustomError(context.Exception.Message)
 			};
 
 			context.ExceptionHandled = true;

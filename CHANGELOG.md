@@ -1,3 +1,7 @@
+# 2.0
+
+* 2.0.0 - .Net 5 support
+
 # 1.8
 
 * 1.8.2 - Change `JwtTokenOptions` lifetimes from `int` to `TimeSpan`

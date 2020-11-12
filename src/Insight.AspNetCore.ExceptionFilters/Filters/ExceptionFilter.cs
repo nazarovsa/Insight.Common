@@ -15,7 +15,7 @@ namespace Insight.AspNetCore.ExceptionFilters.Filters
 			context.Result = new ObjectResult("Unhandled exception was thrown")
 			{
 				StatusCode = (int) HttpStatusCode.InternalServerError,
-				Value = CustomError.Create(context.Exception.Message, context.Exception)
+				Value = new CustomError(context.Exception.Message, context.Exception)
 			};
 
 			context.ExceptionHandled = true;

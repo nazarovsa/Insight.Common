@@ -1,6 +1,9 @@
 <Project>
 	<PropertyGroup>
-		<MicrosoftVersion>3.1.10</MicrosoftVersion>
+		<LangVersion>9.0</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup>
+		<MicrosoftVersion>5.0.0</MicrosoftVersion>
 		<NewtonJsonVersion>12.0.3</NewtonJsonVersion>
 		<FluentValidationVersion>9.3.0</FluentValidationVersion>
 		<MartenVersion>3.13.2</MartenVersion>

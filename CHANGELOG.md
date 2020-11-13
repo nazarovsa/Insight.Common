@@ -1,6 +1,13 @@
-# 2.0
+# 2.2
+
+* 2.2.0 - Add error logging to ExceptionFilter
+
+# 2.1
 
 * 2.1.0 - Add deconstruct to Insight.Dto.Result
+
+# 2.0
+
 * 2.0.0 - .Net 5 support
 
 # 1.8

@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Tracing", "src\Insi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Logging.Serilog.Middlewares", "src\Insight.Logging.Serilog.Middlewares\Insight.Logging.Serilog.Middlewares.csproj", "{68DFFB49-6EFC-41F5-A2AE-E85C5B3414EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.TransactionalOutbox", "src\Insight.TransactionalOutbox\Insight.TransactionalOutbox.csproj", "{A294418F-0F7D-4F21-BFC8-643329626EDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -205,6 +207,10 @@ Global
 		{68DFFB49-6EFC-41F5-A2AE-E85C5B3414EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68DFFB49-6EFC-41F5-A2AE-E85C5B3414EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68DFFB49-6EFC-41F5-A2AE-E85C5B3414EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A294418F-0F7D-4F21-BFC8-643329626EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A294418F-0F7D-4F21-BFC8-643329626EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A294418F-0F7D-4F21-BFC8-643329626EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A294418F-0F7D-4F21-BFC8-643329626EDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,3 +1,7 @@
+# 2.3
+
+* 2.3.0 - Add TransactionOutbox abstractions, Add BackgroundServiceBase
+
 # 2.2
 
 * 2.2.0 - Add error logging to ExceptionFilter

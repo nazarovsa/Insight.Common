@@ -11,9 +11,9 @@ namespace Insight.Hosting.Worker.Services
 	public abstract class BackgroundServiceBase : BackgroundService
 	{
 		private readonly BackgroundServiceOptions _options;
-		protected ILogService<BackgroundServiceBase> LogService { get; }
+		protected ILogService LogService { get; }
 
-		protected BackgroundServiceBase(ILogService<BackgroundServiceBase> logService,
+		protected BackgroundServiceBase(ILogService logService,
 			IOptionsSnapshot<BackgroundServiceOptions> options)
 		{
 			LogService = logService ?? throw new ArgumentNullException(nameof(logService));

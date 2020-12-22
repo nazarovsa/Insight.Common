@@ -1,3 +1,7 @@
+# 2.4
+
+* 2.4.0 - Add RequestApmDecorator, ILogService<> now inherits from ILogService
+
 # 2.3
 
 * 2.3.0 - Add TransactionOutbox abstractions, Add BackgroundServiceBase

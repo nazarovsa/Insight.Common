@@ -3,7 +3,7 @@ using Serilog;
 
 namespace Insight.Logging.Serilog
 {
-	public sealed class SerilogService : ILogService
+	public class SerilogService : ILogService
 	{
 		public void Info(object obj, string message, params object[] parameters)
 		{
@@ -44,7 +44,7 @@ namespace Insight.Logging.Serilog
 		}
 	}
 
-	public sealed class SerilogService<T> : ILogService<T>
+	public sealed class SerilogService<T> : SerilogService, ILogService<T>
 	{
 		public void Info(string message, params object[] parameters)
 		{

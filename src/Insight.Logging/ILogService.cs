@@ -15,7 +15,7 @@ namespace Insight.Logging
 		void Trace(object obj, string message, params object[] parameters);
 	}
 
-	public interface ILogService<T>
+	public interface ILogService<T> : ILogService
 	{
 		void Info(string message, params object[] parameters);
 

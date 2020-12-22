@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Logging.Serilog.Mid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.TransactionalOutbox", "src\Insight.TransactionalOutbox\Insight.TransactionalOutbox.csproj", "{A294418F-0F7D-4F21-BFC8-643329626EDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.MediatR.Elastic.Apm", "src\Insight.MediatR.Elastic.Apm\Insight.MediatR.Elastic.Apm.csproj", "{B9E39DD9-D037-4167-A093-7B5963FFD4D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -211,6 +213,10 @@ Global
 		{A294418F-0F7D-4F21-BFC8-643329626EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A294418F-0F7D-4F21-BFC8-643329626EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A294418F-0F7D-4F21-BFC8-643329626EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E39DD9-D037-4167-A093-7B5963FFD4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E39DD9-D037-4167-A093-7B5963FFD4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E39DD9-D037-4167-A093-7B5963FFD4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E39DD9-D037-4167-A093-7B5963FFD4D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Elastic.Apm" Version="1.7.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Insight.Logging\Insight.Logging.csproj" />
+        <ProjectReference Include="..\Insight.MediatR\Insight.MediatR.csproj" />
+        <PackageReference Include="Scrutor" Version="3.3.0" />
+    </ItemGroup>
+
+</Project>

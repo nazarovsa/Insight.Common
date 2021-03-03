@@ -12,16 +12,17 @@ namespace Insight.DependencyInjection.Tests
 	public class ServiceCollectionExtensionsTests
 	{
 		[Fact]
-		public void Should_register_default_implementation_of_interface()
+		public async Task Should_register_default_implementation_of_interface()
 		{
 			var services = new ServiceCollection();
 
-			services.RegisterDefaultImplementations(typeof(Service).Assembly);
+			services.RegisterDefaultImplementations(typeof(DefaultService).Assembly);
 
 			var provider = services.BuildServiceProvider();
 
 			var service = provider.GetService<IService>();
 			Assert.NotNull(service);
+			await service.Up();
 		}
 
 		[Fact]
@@ -29,7 +30,7 @@ namespace Insight.DependencyInjection.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.RegisterDefaultImplementations(typeof(Service).Assembly, new[] {typeof(IHandler<,>)});
+			services.RegisterDefaultImplementations(typeof(DefaultService).Assembly, new[] {typeof(IHandler<,>)});
 
 			var provider = services.BuildServiceProvider();
 
@@ -44,11 +45,11 @@ namespace Insight.DependencyInjection.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AsClosedTypesOf(new[] {typeof(Service).Assembly}, typeof(IService));
+			services.AsClosedTypesOf(new[] {typeof(DefaultService).Assembly}, typeof(IServiceHelper));
 
 			var provider = services.BuildServiceProvider();
 
-			var service = provider.GetService<IService>();
+			var service = provider.GetService<IServiceHelper>();
 			Assert.NotNull(service);
 		}
 
@@ -57,7 +58,7 @@ namespace Insight.DependencyInjection.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AsClosedTypesOf(new[] {typeof(Service).Assembly}, typeof(IHandler<,>));
+			services.AsClosedTypesOf(new[] {typeof(DefaultService).Assembly}, typeof(IHandler<,>));
 
 			var provider = services.BuildServiceProvider();
 
